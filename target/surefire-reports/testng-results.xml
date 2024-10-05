@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-17T12:39:35 UTC" name="Surefire suite" finished-at="2024-09-17T12:39:57 UTC" duration-ms="22084">
+    <groups>
+      <group name="API">
+        <method signature="TenantTest.tenantCrudTest()[pri:0, instance:m.api.tenant.TenantTest@adcfad9]" name="tenantCrudTest" class="m.api.tenant.TenantTest"/>
+        <method signature="UserTest.userCrudTest()[pri:0, instance:m.api.user.UserTest@3b95a6db]" name="userCrudTest" class="m.api.user.UserTest"/>
+      </group> <!-- API -->
+    </groups>
+    <test started-at="2024-09-17T12:39:35 UTC" name="Surefire test" finished-at="2024-09-17T12:39:57 UTC" duration-ms="22084">
+      <class name="m.api.user.UserTest">
+        <test-method is-config="true" signature="authenticateMainAdmin()[pri:0, instance:m.api.user.UserTest@3b95a6db]" started-at="2024-09-17T12:39:35 UTC" name="authenticateMainAdmin" finished-at="2024-09-17T12:39:49 UTC" duration-ms="14040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticateMainAdmin -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:m.api.user.UserTest@3b95a6db]" started-at="2024-09-17T12:39:49 UTC" name="testSetUp" finished-at="2024-09-17T12:39:49 UTC" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:m.api.user.UserTest@3b95a6db]" started-at="2024-09-17T12:39:49 UTC" name="setUp" finished-at="2024-09-17T12:39:50 UTC" duration-ms="48" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void m.api.user.UserTest.userCrudTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userCrudTest()[pri:0, instance:m.api.user.UserTest@3b95a6db]" started-at="2024-09-17T12:39:50 UTC" name="userCrudTest" finished-at="2024-09-17T12:39:56 UTC" duration-ms="6601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCrudTest -->
+        <test-method is-config="true" signature="testExecutionLog(org.testng.ITestResult)[pri:0, instance:m.api.user.UserTest@3b95a6db]" started-at="2024-09-17T12:39:56 UTC" name="testExecutionLog" finished-at="2024-09-17T12:39:56 UTC" duration-ms="29" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCrudTest status=SUCCESS method=UserTest.userCrudTest()[pri:0, instance:m.api.user.UserTest@3b95a6db] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExecutionLog -->
+      </class> <!-- m.api.user.UserTest -->
+      <class name="m.api.tenant.TenantTest">
+        <test-method is-config="true" signature="authenticateMainAdmin()[pri:0, instance:m.api.tenant.TenantTest@adcfad9]" started-at="2024-09-17T12:39:35 UTC" name="authenticateMainAdmin" finished-at="2024-09-17T12:39:49 UTC" duration-ms="14040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticateMainAdmin -->
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:m.api.tenant.TenantTest@adcfad9]" started-at="2024-09-17T12:39:49 UTC" name="testSetUp" finished-at="2024-09-17T12:39:49 UTC" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:m.api.tenant.TenantTest@adcfad9]" started-at="2024-09-17T12:39:49 UTC" name="setUp" finished-at="2024-09-17T12:39:50 UTC" duration-ms="48" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void m.api.tenant.TenantTest.tenantCrudTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tenantCrudTest()[pri:0, instance:m.api.tenant.TenantTest@adcfad9]" started-at="2024-09-17T12:39:50 UTC" name="tenantCrudTest" finished-at="2024-09-17T12:39:57 UTC" duration-ms="7292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tenantCrudTest -->
+        <test-method is-config="true" signature="testExecutionLog(org.testng.ITestResult)[pri:0, instance:m.api.tenant.TenantTest@adcfad9]" started-at="2024-09-17T12:39:57 UTC" name="testExecutionLog" finished-at="2024-09-17T12:39:57 UTC" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tenantCrudTest status=SUCCESS method=TenantTest.tenantCrudTest()[pri:0, instance:m.api.tenant.TenantTest@adcfad9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExecutionLog -->
+      </class> <!-- m.api.tenant.TenantTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

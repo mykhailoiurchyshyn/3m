@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="29.224" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/code/target/test-classes:/code/target/classes:/var/jenkins_home/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/var/jenkins_home/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/var/jenkins_home/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/var/jenkins_home/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/var/jenkins_home/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/var/jenkins_home/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/var/jenkins_home/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/var/jenkins_home/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/7.3.2/selenide-7.3.2.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/var/jenkins_home/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide-core/7.3.2/selenide-core-7.3.2.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/33.2.0-jre/guava-33.2.0-jre.jar:/var/jenkins_home/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/var/jenkins_home/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/var/jenkins_home/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/var/jenkins_home/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide-testng/7.3.2/selenide-testng-7.3.2.jar:/var/jenkins_home/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/var/jenkins_home/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/var/jenkins_home/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/var/jenkins_home/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/var/jenkins_home/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/var/jenkins_home/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/var/jenkins_home/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-testng/2.13.2/allure-testng-2.13.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-java-commons/2.13.2/allure-java-commons-2.13.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-model/2.13.2/allure-model-2.13.2.jar:/var/jenkins_home/.m2/repository/org/apache/tika/tika-core/1.20/tika-core-1.20.jar:/var/jenkins_home/.m2/repository/org/jooq/joor-java-8/0.9.10/joor-java-8-0.9.10.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-selenide/2.13.2/allure-selenide-2.13.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-rest-assured/2.13.2/allure-rest-assured-2.13.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-attachments/2.13.2/allure-attachments-2.13.2.jar:/var/jenkins_home/.m2/repository/org/freemarker/freemarker/2.3.28/freemarker-2.3.28.jar:/var/jenkins_home/.m2/repository/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.jar:/var/jenkins_home/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/2.0.10/slf4j-api-2.0.10.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-jdk-platform-logging/2.0.10/slf4j-jdk-platform-logging-2.0.10.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-classic/1.4.6/logback-classic-1.4.6.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-core/1.4.6/logback-core-1.4.6.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-log4j12/1.7.33/slf4j-log4j12-1.7.33.jar:/var/jenkins_home/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/var/jenkins_home/.m2/repository/com/google/inject/guice/5.0.1/guice-5.0.1.jar:/var/jenkins_home/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/var/jenkins_home/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/var/jenkins_home/.m2/repository/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar:/var/jenkins_home/.m2/repository/org/aspectj/aspectjrt/1.9.21/aspectjrt-1.9.21.jar:/var/jenkins_home/.m2/repository/org/assertj/assertj-core/3.26.0/assertj-core-3.26.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy/1.14.16/byte-buddy-1.14.16.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/opt/java/openjdk/lib"/>
+    <property name="sun.java.command" value="/code/target/surefire/surefirebooter-20240917123926014_3.jar /code/target/surefire 2024-09-17T12-39-25_783-jvmRun1 surefire-20240917123926014_1tmp surefire_0-20240917123926014_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/code/target/test-classes:/code/target/classes:/var/jenkins_home/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/var/jenkins_home/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/var/jenkins_home/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/var/jenkins_home/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/var/jenkins_home/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/var/jenkins_home/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/var/jenkins_home/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/var/jenkins_home/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/7.3.2/selenide-7.3.2.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/var/jenkins_home/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/var/jenkins_home/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide-core/7.3.2/selenide-core-7.3.2.jar:/var/jenkins_home/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/33.2.0-jre/guava-33.2.0-jre.jar:/var/jenkins_home/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/var/jenkins_home/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/var/jenkins_home/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/var/jenkins_home/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide-testng/7.3.2/selenide-testng-7.3.2.jar:/var/jenkins_home/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/var/jenkins_home/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/var/jenkins_home/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/var/jenkins_home/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/var/jenkins_home/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/var/jenkins_home/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/var/jenkins_home/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/var/jenkins_home/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-testng/2.13.2/allure-testng-2.13.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-java-commons/2.13.2/allure-java-commons-2.13.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-model/2.13.2/allure-model-2.13.2.jar:/var/jenkins_home/.m2/repository/org/apache/tika/tika-core/1.20/tika-core-1.20.jar:/var/jenkins_home/.m2/repository/org/jooq/joor-java-8/0.9.10/joor-java-8-0.9.10.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-selenide/2.13.2/allure-selenide-2.13.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-rest-assured/2.13.2/allure-rest-assured-2.13.2.jar:/var/jenkins_home/.m2/repository/io/qameta/allure/allure-attachments/2.13.2/allure-attachments-2.13.2.jar:/var/jenkins_home/.m2/repository/org/freemarker/freemarker/2.3.28/freemarker-2.3.28.jar:/var/jenkins_home/.m2/repository/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.jar:/var/jenkins_home/.m2/repository/org/checkerframework/checker-qual/3.41.0/checker-qual-3.41.0.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/2.0.10/slf4j-api-2.0.10.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-jdk-platform-logging/2.0.10/slf4j-jdk-platform-logging-2.0.10.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-classic/1.4.6/logback-classic-1.4.6.jar:/var/jenkins_home/.m2/repository/ch/qos/logback/logback-core/1.4.6/logback-core-1.4.6.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-log4j12/1.7.33/slf4j-log4j12-1.7.33.jar:/var/jenkins_home/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/var/jenkins_home/.m2/repository/com/google/inject/guice/5.0.1/guice-5.0.1.jar:/var/jenkins_home/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/var/jenkins_home/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/var/jenkins_home/.m2/repository/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar:/var/jenkins_home/.m2/repository/org/aspectj/aspectjrt/1.9.21/aspectjrt-1.9.21.jar:/var/jenkins_home/.m2/repository/org/assertj/assertj-core/3.26.0/assertj-core-3.26.0.jar:/var/jenkins_home/.m2/repository/net/bytebuddy/byte-buddy/1.14.16/byte-buddy-1.14.16.jar:"/>
+    <property name="allure.results.directory" value="/var/jenkins_home/workspace/Test/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/var/jenkins_home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/opt/java/openjdk"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/code"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="logback.configurationFile" value="src/test/resources/logback.xml"/>
+    <property name="surefire.real.class.path" value="/code/target/surefire/surefirebooter-20240917123926014_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+7"/>
+    <property name="user.name" value="jenkins"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.153.1-microsoft-standard-WSL2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.12+7"/>
+    <property name="localRepository" value="/var/jenkins_home/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="/code"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="groups" value="API"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.12+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="userCrudTest" classname="m.api.user.UserTest" time="6.653">
+    <system-out><![CDATA[12:39:29,586 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.6
+12:39:29,672 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [src/test/resources/logback.xml] at [file:/code/src/test/resources/logback.xml]
+12:39:30,136 |-WARN in ch.qos.logback.classic.joran.action.LevelAction - <level> element is deprecated. Near [level] on line 24
+12:39:30,136 |-WARN in ch.qos.logback.classic.joran.action.LevelAction - Please use "level" attribute within <logger> or <root> elements instead.
+12:39:30,626 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+12:39:30,626 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+12:39:30,686 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:39:31,016 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [SIFT]
+12:39:31,016 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.sift.SiftingAppender]
+12:39:31,104 |-INFO in ch.qos.logback.classic.model.processor.LevelModelHandler - ROOT level set to INFO
+12:39:31,105 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+12:39:31,109 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [SIFT] to Logger[ROOT]
+12:39:31,109 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@7c2a69b4 - End of configuration.
+12:39:31,113 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@a619c2 - Registering current configuration as safe fallback point
+
+12:39:35.821 -- INFO  [TestNG-test-Surefire test-2] Authenticate Main Admin
+12:39:35.821 -- INFO  [TestNG-test-Surefire test-1] Authenticate Main Admin
+Request method:	POST
+Request URI:	https://auth-dev.3motionai.com/connect/token
+Proxy:			<none>
+Request params:	password=1q2w3E*
+				grant_type=password
+				scope=offline_access _3M
+				client_secret=1q2w3e*
+				client_id=_3M_Postman_Internal
+				username=admin@abp.io
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	https://auth-dev.3motionai.com/connect/token
+Proxy:			<none>
+Request params:	password=1q2w3E*
+				grant_type=password
+				scope=offline_access _3M
+				client_secret=1q2w3e*
+				client_id=_3M_Postman_Internal
+				username=admin@abp.io
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 17 Sep 2024 12:39:48 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 4465
+Connection: keep-alive
+Cache-Control: no-store
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Correlation-Id: 3546e22dd3584ad7b93cd153008c8590
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjdkMjg0N2ItNTc2Yy00MmNmLTkyNzUtZDAwMmYzZGVkNjRlIiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6ImE4MzVkNTk4LTg3YmYtNGM5Yi05ZDVlLWIzMzA0NGU3NTVkZiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiMTYtYmNmOC0wMmUxLWVhMzM0YWI5MGI2MCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGIxZS1iNTM0LTVhYzAtYWQ2NzgwZTVkYzUxIn0.FkLcANTkQ3SRks9C_jMFYTcW2XQsc2FQoDpsn9DqV--9clxbcXleFCfVERTexZAoG3vADLlkoTzofTas8yqbp63OS6YCfnV5VHfMM87TEgJEdwBMxHk1FjJRVXeTK-UpHwXFa_fhg_3I74kJ4YcgBniuwTlZCkSV48p-SPGsLtIHuQkcUR9At4i6EfmIrjn1pw89HfWRI78yngIY7NlALao1iXF97-oZX9c1Di3ZfhvLwJUaFog5--W2wpvfz6lr9pnrT_VrbwfKQ3tPulx40hLj1avCCr27pd51heKLJT5c4SpCOU8rNDhidGwQS1_0Rs8MsC0Ydleyqp-GAOpTqQ",
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "refresh_token": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZDQkMtSFM1MTIiLCJraWQiOiI1OEQ1REY4RTY3NTIzMUE5NzRDRjg2RDVGM0NGNjY0MjlBRTg3NTMwIiwidHlwIjoib2lfcmVmdCtqd3QiLCJjdHkiOiJKV1QifQ.IsgHfYOvRUkkpcwbh4Gp2JU_ijFI3RH4Ew4HjXC0ILxc-5BAe242lYfp1gpBmqWpdzUsnCSOaLVs76pf2mo-6TRPHezKa9gdzo6XU9DnQpbDin7B_rOv762ugwOKFld5jsHLJqJe9bfegbmMRxgW0OGCrrOCgSxaO1BgBcF7_DgeX6eRI_Bll3Fp2P1EhCV3zyCJaJiZTO6uHVODgwlva_Tzr1pN8_AoUuouAujA8-hn0UVOH9kaxBzFihg8GDDl64GbGgnkTCJl16cbO3igRYj5Ydf_LJyxOjxt34u6ADU72tU0I6vz-qII8jyj_uAf4ED6NRhTFau--uwU8INoSA.iBOw_nYUKI_PloA5mG86sQ.dZbcQGFORv4gmbWCFWgd7qYKHJMZ1SMfRlBmxXYU2z6ovNOwaY3j7QCDXt3qYjXnmn_ogpgzErMTnXgwijK3BbWD7_Ep3emiBq9O9HxCA3Mx4GCPmeLQilevc2nRCh5CB1lOlue1ZCnAjACJwEB6ijLhbBDLl6DAgWIH6ZCvHIp9R2q5nETy_E2_L07_IkqT7dSLCNmKJGZToIt4ua7fh2bFpasyGaF-nuVUiJBjFQPKjH33NB-hCndxhVdPQ5oWyOX415PB9JsQzth-TMzQDTF_-ro90O5y81nfjei-NQVU9Mz8om99QyldiNmMlErK-LAqoqAPliEoqwm4wVsQFTC2z0NjwOSZYfXAz675q7AJ1ffQI2iwNDBgxmC0t0DVfAJ6sCg0c47KL3GilUQLmCBUPGySd77mrdqBOOuCKG2li6Ghzp4siPsI7jF6ry6NHQYXcmLNxjrd3fvBWPYdW7DVkmxq1c9uiQ3gJQyN9qKknC7JCkTMtL9tJYBOTKwR-ae5FVKH8I4rWYcWiJZOPsAg7cJA7t94m1gE437UcPB8s5hgTBeN4DnGNR-P1BXSEdKennNfdhlkq5TbkHeAOiIK2juI-zWyPVNnUY90HG5P20v4SHFJR1sIJhEbovuyYzsLc5Uyyt2G9_cfLY8WAk5ppedDTdjXq2UyNQ5aZRGPepiPp5hX9kp9PZf4wilWna89Vi6WdW8OfJqEz_Nz75snESsqx-P0e54ovykeV6WWaZeWQ6ZCrk3n80PGICbSUIMGbChf2A3fwZ8PIstkx1o-BhNJZWusuYeq8BI07xW39vaeY-Z17fGI-XRkKmJFfUC7R8ndcKAVRRYufoOSrflK09wkefjZ-APiDgYj_cHF2jU2rzGjnyZ-kYVjWz03CW7wHZCQpA1rF0sgm9T5rZR1EaS69198f1DRlIMUBwg2ZsVSvQUy2AxzOrmIm7yd3POqp-d0Z0kN0oxNOGWN2-h4yMVXQiEiMSLKGHv2Kfea9W1Y2iNWnA1MzE6l_xBr1-7V2RDnDb0qAgeXFSmnxb_D4VH2m8hacEgBbhILMYdby1GDUE-PlLajwF8WcDRy0OeVAP4zsYOqIopgTwAy_NJu12CT3ie0zg5HSFOueWOaLszwtJeUAnpavd2mDFzSQGPX2eNspWWnZmiVkzuEEWlQuDoka0Xp8dLN84-9KSSzk7uqSyjjcHfeELAfIEf-JQI8GJQ6awDi-8iQ2A0ZUZtkMMYp6nm1ijimRLHL7tHdJEdIUB0acKmuMOReyrvBPYxrxE18djv7zpDsUaoMxsap3NRQOMSW_N18DmWoVvHB7VEDqRUBmm1gTTtZgpbFPYqg5TPi2Wq-kQ9sUVrLXkmIkRUDu510oQvEAV2Z3Yg3UfjLZyuudmzgh5Hv_JQ9m1mUOv-PgsnFEI8I4dgMBUP43-F0dHCR04tCCrKF6caFeOIxGmzmFYRwcL3YXCSFfNKX_NOcFL8uENQkXfTy41PNAq1IYPwq-A4g5bMr0yzOOswOr7167EsCdaTIYeePjWsPz36RuTNg2d4-27t3iS0wfdxMzoHNsqF4zY71TCO8Mq6w0d7Th5MvK8U0ONVr6d5iLoeBh-BliGkg5DVApi_hf3vF8Ap0slR_7sR1PXARUPAbfMZwIXBdH6AyiwfZZ2reDQAdfWjKdQm-N-T_A4kxAV3RJvKMLlJnEeteS13piURFeahI65DEU9NA4GveOkzPyKA5xgIo5L2P3Eb3SgillV-niQtpD0xw2FpAkRbMfHxKjeHlLFBpdjMUtEImD1vRIN88gLHN4AmKjW7ewrNKqS9j6XgwvUHmimuSdGVp52JIeD2MZCFLddU6N-s27HWRgfR1wHr917iiu1TvQxpRjyu2MqmcrdYePUY8hEFF6WULWevY05jpsa0AS7wMBgaD77O-r7lh8ZoY-PcKJ92wV0HGdtedoJVIoZePoDc8NDYy9dK8wdUrDxgWct_PrcAY1graRsdfcd6qsc23hDCCBo3BD0R8JRbItyMEmOh8NPjo2rKSQBV3rIE9ji4OJ2cHQdQSW0PzpBTH7kya2XJe7hv6ecNhugpVY0BX-_x4SL-GUEP2_uGJ_PXj0HqbzNdgo9tk_gZuhg1W9F75VhAIoh3IwtLGnnJ3p2y1UqnOd6AeORWAVheXax-dsBqYOdBMrACqisOUKpmD-Nbq986RnUFfBH1BnrO7mYO5C9jy9y6QNLHMbTXJscIqGEhil1rmj5EXwzBAukS7ISeILDssrX2xKy0GU-A8QkJr4LdMhPGprpvcr4g5J7hfwIePDZUMl95TQxbnESLRbyshIklYkK2edpi-0MuC-1Qj2ApQHlAcJzfA2fqJ-2RSyL15BYc03BupPqfJLPLpcgU7DLFsa0XNc9D-lT__GRWSHYgWvgT8R92b5Qvx7-s_9BbvL5KZCBQ-GhmtcmYzcnrHOmCtePCKPeIUPvt4v9em-QLqqoy_Hbd2b-ZZZQR1NqMZ.4aLbppwyN9MoKSsil3CFL8Vm828W8r56yMBSuGgWGzA"
+}
+HTTP/1.1 200 OK
+Date: Tue, 17 Sep 2024 12:39:48 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 4465
+Connection: keep-alive
+Cache-Control: no-store
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Correlation-Id: d927b8491869423099a2eb0ba3c76689
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjMwZjZhZjctMjUwOC00NDI1LTkzMDAtMzZjOTlhNmVjYjE2Iiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6IjYxZDNhMTMzLWJkM2EtNGFkNS05MWY0LTg5Y2RiYzk0YmQ2NiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiZDYtYmM0Ny04NDAxLTFiNGE1ZDhlNjgxNCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGJkYy05MzUxLThiZWQtODVkYWJiNDFhNmQ0In0.j7JlWSDx2sJ9SKtAGF082uTK7iLNJyQIyDFDZAVoEylk2xM34yZ7R36MKO6HmAOYJ-6fWO8r1k6_XmhJwOPAhe9cmz11bUbBgQGLoun6TU4BjEdYwIaZbVyJc0QrNYRSM_0fQoffREUIePtfwDlKVvUBjyA5F0dmsbMM2HrDDsrYzOiCahxQRtqWtyr5KW8jHgkghiXUSHFCdHAS5U91_DUou28EqnvmUZHxXQPyOAKEf4ZWMZX0IXDyrhzBp_AoKODG2WW1bse_dFHdiIla1W33kTDlIyx3azmI859zcGk3xm1HbyAe0LHmzIZ8lQLSDkySqXqmnKlBsPgQa_0DOA",
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "refresh_token": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZDQkMtSFM1MTIiLCJraWQiOiI1OEQ1REY4RTY3NTIzMUE5NzRDRjg2RDVGM0NGNjY0MjlBRTg3NTMwIiwidHlwIjoib2lfcmVmdCtqd3QiLCJjdHkiOiJKV1QifQ.01z0lxKoIi61O5DklVIXYXkqYmsLkyltU4-vh1DeBT186PoDx7sAf4ey1-hTxdJXeRBL3g5a9z07WB9H6djNx-VUiJeBDy78qJyKMqOrL21ktV4uN2qqcCat7D4DxHKd8HlHGTwowEZhCv1ah6Hyu3LAJ9nA3izPNQDxpNC8ODxn4QO7T6G-EDCePiaHiMJ-PzWR9QURfEA21adCMo5HeDwaj_1dEMR9be1_HK7zI9-dtIvt5sLXP1nh4yg7pqkCQk2cwOHCL_eCzaEVUMLykWs8iHaNkrT1lS7OkaqzSHnRKV0Qknzwr3Gnlv03mJQUpFjm0FoNrfhhou1ShgdKOg.O06PAdZvZn7-EW10GRoBng.1aYS7k_Ro62UvImuR1AUdtI5llZvGjOdd__MurtQjbE_hZ_IbQlZg6mZRWydGapRcILCDtDs7-CJTEGsbqnDu6407MpbJJJbx1vGIwyng_rNW3Gm3V-kPAfvnjhk4fzTSUDpn7O0qVxX6_zBTHRvL6fpYkwrwTQvfG42nkIc-7uNPtOX3d9P_kI22NXyoe4RX0V8mTcRfVtVNMX5CB1GMkoX0XzyY6PcYNjvwetXRdvIdmvmj3vfa4C3MpC1IJUtl-G6Sz1bYrdQ1kKyCUru7gW2EsSWS8olreIBbfYcd-LYdxKRNuEDF-Y7i5oRQmT-aqqUTCjQZHcxHNb9WfJPmJT3UKorA0IfTo9V6aw-KWhB4o2QEx-eYto08vFawpHND7gcfVWYVU9RuJyRmH3Sj7s5cRkteYbxf0bjEjJKARcetuc2cq76CxzfU2SUQFmSr8tdacCyv28AXY2xnmPTrHWi02_XjzfWR_zspMwo_Y45rHZ8pdNmW6MouD4dBLDCCXWWVZ1IRUKjcA0_bHfrWJmnCJeTGC_oZD5lK8cVwc6tSN_LrIDDwXLNsfkkzIhWRpUyhZyB35CcYvaphMZk_VyGkLP8u6Sas16c86lCdoyrNkSTqqCUQu4t0ppXnpnIUkCnWdH2sJD6SNLD7RmgPhNp1qojZ3xIDx-HwcF4FWbgfSy-7jBk-KNaU1QTW6iSAVADLsSY2CqUxgcqQtgjl6wtsY5chho4muaCQl8qdzJ9F7R4YzNVydpEGsHY_XHfKyKpmxE8Sr0OGylkXIDQicdxXHLlZF_cfzcy7INmsM_DFoX9vVySNcw3Ao2wSP_QZzmTtc06xfO-ArAQnh2yUxBMSa8UcYzhYjdmgAS-hi6Hd9bSPGJ9TELhXoaWM9Q3YitYs5TinvPs2qQsZgImsIRHf6OW56m5wJ-hyjrqt3uaS9PFavdGMDiE73jGuGuFDrHyaLQLjcOunOFKNEVFM-QXuPiWaqjn62QyjJv4-oIu8KFnZEIme5bNx344EcvSLQgK5HjR6bY2WoWcCSPXP2RM459_Vnr1ii3_6BqmahdLMKS3rQyKjgC9EJPII2ZaJCHWuFcbz3Yfhi-o_r9aMCLdKQj51PwL6SzGuvtj-bXBph3Px3dLZPkRBJQjrhx5n_xXMSxd-oepYAPv3hOptAlluhnCVos2K0P16WAfPGjVpOlxe_9K9Xq_MfWmkkRADVS8eN3aMD5LyoExH4ef65qjAIcTciaYQ91oev9wtFUdH3jPkehQB2fD-7xXsrfd3m2a6_Kw4zxYaAhlyR31w3yFkX71G0ZkH3z4q3RSj8wJymZOaN_rVMxJv6uqBqz8koy2EddO8KTt6F_U9g-3ZqjfyvY_fJ_7xIvuulYxqyul9VG3QlP4H8sEUztVsl6ficuVK7B00hp6ATRnGfVD_0-2C3QbvXulZFNZIHkTE4IJ8YUT1XIXn_BjKHTgoVmxK04BBSOvml9caQ2RN7X1l93icx6vONEQ18a2ko6E3YP5UtDZQrg6y4_V2wzn6nhldYMANMiRV8cLcB250fn3U57fT8_4VC0EpSzRH1f7IHMXpQjJ8i3eNk3x337zhWz3KM9gyq5EZ68Y5cy3RmQueOwxZc6iu8a_z_vCovn3K1tcvcc5t1kJrtu5PrrF14ke8fTxAyUbhMa4J_8X9nqLD31YJzOPyYQXZBTASOyWLSOieBV8uDlpzJUsmVTZtdqZMVFHljPQIIbMdaglzQA5uUdeI5cU24ooQ1K9dXp4GmmrgDHpOxHQ_0NO3UdjG-y9lmXI6rKaR6tT05JNN3H_7Ve58jlvLvyHktu6F6YdEPhK5hwkaLreS_L-zE4DuwvJeTiiMuk9wIuHbGaWuJ6RMUCyYgwMuNZV7ViQQWPy8YTiDuqlY6JcjsC3Hpa8vbJkltQenMnUvaCmE-5p34OC7G39W2e5LDvtO2enpWwQN6HxUqd9EYTf_0dMEQ04u7W6krwYLJF2PIh5zzlVza4E7AMaqv8ZctXwRSLWvITpCIKW0T5aW1vi6UHGKCQXdtTbuHNJhob6euJ9SnklDdKORhsDfcvJ7Lt03DuYyMaOtaD-knpdU9UorL52-YObTfQMkhFz-9nMhFe7Pj-R_O7D6tpRgGvJmhkMr8J83QagIKkXbM11a-fqoXR70F7KltlUwdqcXPRN6lTM1VJinGDIjp9uXr_923XSKQRAdkmdc0GXjMXdalVbJeYdE8YMfIlOh72S3YNnYkhcwSck5Lw5lju1R3_j4ChVe8yiCLQCTG4chkIDtUBByMYSTHd4xt13Knx_jJ13MCNm_sGoFmQUXhcpspdE--WMez-kfkdebTrydILi8C8EUZicGnQJSJ1OlJQ7rFR_HkoriDZr0wr3M2BzrIeS2OwAPkIFB4L5CZi61EQrqVOURBimpmBNZpm5Nj9-nK73JrxCl7YpNEF4wxf13Y_I4XBiDjTRbiOoIg9p-7djeJXqROOqWDFDBsB2.21ZIQ9Z36OqVPGbzeEULOEZwC7fVAKTACJqA6nfoOQ4"
+}
+12:39:49.612 -- INFO  [TestNG-test-Surefire test-2] User is Authenticated Successfully
+12:39:49.612 -- INFO  [TestNG-test-Surefire test-1] User is Authenticated Successfully
+12:39:49.975 -- INFO  [TestNG-test-Surefire test-2] Integration Test: [m.api.user.UserTest_userCrudTest] STARTED
+12:39:49.975 -- INFO  [TestNG-test-Surefire test-1] Integration Test: [m.api.tenant.TenantTest_tenantCrudTest] STARTED
+12:39:49.980 -- INFO  [TestNG-test-Surefire test-2] -------------------------------------------
+12:39:49.986 -- INFO  [TestNG-test-Surefire test-1] -------------------------------------------
+12:39:50.431 -- INFO  [TestNG-test-Surefire test-2] Add user
+12:39:51.844 -- INFO  [TestNG-test-Surefire test-2] --Request: POST : https://api-dev.3motionai.com/api/identity/users/custom
+---Headers:
+Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjMwZjZhZjctMjUwOC00NDI1LTkzMDAtMzZjOTlhNmVjYjE2Iiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6IjYxZDNhMTMzLWJkM2EtNGFkNS05MWY0LTg5Y2RiYzk0YmQ2NiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiZDYtYmM0Ny04NDAxLTFiNGE1ZDhlNjgxNCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGJkYy05MzUxLThiZWQtODVkYWJiNDFhNmQ0In0.j7JlWSDx2sJ9SKtAGF082uTK7iLNJyQIyDFDZAVoEylk2xM34yZ7R36MKO6HmAOYJ-6fWO8r1k6_XmhJwOPAhe9cmz11bUbBgQGLoun6TU4BjEdYwIaZbVyJc0QrNYRSM_0fQoffREUIePtfwDlKVvUBjyA5F0dmsbMM2HrDDsrYzOiCahxQRtqWtyr5KW8jHgkghiXUSHFCdHAS5U91_DUou28EqnvmUZHxXQPyOAKEf4ZWMZX0IXDyrhzBp_AoKODG2WW1bse_dFHdiIla1W33kTDlIyx3azmI859zcGk3xm1HbyAe0LHmzIZ8lQLSDkySqXqmnKlBsPgQa_0DOA
+Accept=*/*
+Content-Type=application/json
+---Body:
+{
+  "email" : "automation.admin@3motionai.com",
+  "name" : "Automation",
+  "surname" : "Admin",
+  "role" : "3M Tech Admin",
+  "username" : null,
+  "roleNames" : [ "3M Tech Admin" ],
+  "organizationUnitIds" : [ ]
+}
+12:39:51.844 -- INFO  [TestNG-test-Surefire test-1] --Request: POST : https://api-dev.3motionai.com/api/saas/tenants
+---Headers:
+Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjdkMjg0N2ItNTc2Yy00MmNmLTkyNzUtZDAwMmYzZGVkNjRlIiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6ImE4MzVkNTk4LTg3YmYtNGM5Yi05ZDVlLWIzMzA0NGU3NTVkZiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiMTYtYmNmOC0wMmUxLWVhMzM0YWI5MGI2MCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGIxZS1iNTM0LTVhYzAtYWQ2NzgwZTVkYzUxIn0.FkLcANTkQ3SRks9C_jMFYTcW2XQsc2FQoDpsn9DqV--9clxbcXleFCfVERTexZAoG3vADLlkoTzofTas8yqbp63OS6YCfnV5VHfMM87TEgJEdwBMxHk1FjJRVXeTK-UpHwXFa_fhg_3I74kJ4YcgBniuwTlZCkSV48p-SPGsLtIHuQkcUR9At4i6EfmIrjn1pw89HfWRI78yngIY7NlALao1iXF97-oZX9c1Di3ZfhvLwJUaFog5--W2wpvfz6lr9pnrT_VrbwfKQ3tPulx40hLj1avCCr27pd51heKLJT5c4SpCOU8rNDhidGwQS1_0Rs8MsC0Ydleyqp-GAOpTqQ
+Accept=*/*
+Content-Type=application/json
+---Body:
+{
+  "name" : "Test Tenant",
+  "adminEmailAddress" : "test.automation.admin@3motionai.com",
+  "adminPassword" : "QWEasd12!!",
+  "id" : null
+}
+12:39:55.864 -- INFO  [TestNG-test-Surefire test-2] --Response:
+---Status: HTTP/1.1 200 OK
+---X-Request-Id: null
+---Body:
+{
+    "tenantId": null,
+    "userName": "automation.admin@3motionai.com",
+    "email": "automation.admin@3motionai.com",
+    "name": "Automation",
+    "surname": "Admin",
+    "emailConfirmed": false,
+    "phoneNumber": null,
+    "phoneNumberConfirmed": false,
+    "supportTwoFactor": false,
+    "twoFactorEnabled": false,
+    "isActive": true,
+    "lockoutEnabled": true,
+    "isLockedOut": false,
+    "lockoutEnd": null,
+    "shouldChangePasswordOnNextLogin": false,
+    "concurrencyStamp": "5dcb95b936824ad099e9f9fe81a0757c",
+    "roleNames": null,
+    "accessFailedCount": 0,
+    "lastPasswordChangeTime": null,
+    "isExternal": false,
+    "isDeleted": false,
+    "deleterId": null,
+    "deletionTime": null,
+    "lastModificationTime": null,
+    "lastModifierId": null,
+    "creationTime": "2024-09-17T12:39:57.1447438+00:00",
+    "creatorId": "3a100b40-3a04-ced0-4481-e9b74245d9bf",
+    "id": "3a15122b-fdd0-288f-f781-70917a2c9463",
+    "extraProperties": {
+        
+    }
+}
+12:39:55.892 -- INFO  [TestNG-test-Surefire test-2] Delete user
+12:39:55.907 -- WARN  [TestNG-test-Surefire test-2] Could not parse request body: null
+12:39:55.908 -- INFO  [TestNG-test-Surefire test-2] --Request: DELETE : https://api-dev.3motionai.com/api/identity/users/3a15122b-fdd0-288f-f781-70917a2c9463
+---Headers:
+Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjMwZjZhZjctMjUwOC00NDI1LTkzMDAtMzZjOTlhNmVjYjE2Iiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6IjYxZDNhMTMzLWJkM2EtNGFkNS05MWY0LTg5Y2RiYzk0YmQ2NiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiZDYtYmM0Ny04NDAxLTFiNGE1ZDhlNjgxNCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGJkYy05MzUxLThiZWQtODVkYWJiNDFhNmQ0In0.j7JlWSDx2sJ9SKtAGF082uTK7iLNJyQIyDFDZAVoEylk2xM34yZ7R36MKO6HmAOYJ-6fWO8r1k6_XmhJwOPAhe9cmz11bUbBgQGLoun6TU4BjEdYwIaZbVyJc0QrNYRSM_0fQoffREUIePtfwDlKVvUBjyA5F0dmsbMM2HrDDsrYzOiCahxQRtqWtyr5KW8jHgkghiXUSHFCdHAS5U91_DUou28EqnvmUZHxXQPyOAKEf4ZWMZX0IXDyrhzBp_AoKODG2WW1bse_dFHdiIla1W33kTDlIyx3azmI859zcGk3xm1HbyAe0LHmzIZ8lQLSDkySqXqmnKlBsPgQa_0DOA
+Accept=*/*
+Content-Type=application/json
+---Body:
+null
+12:39:56.889 -- INFO  [TestNG-test-Surefire test-2] --Response:
+---Status: HTTP/1.1 204 No Content
+---X-Request-Id: null
+---Body:
+
+]]></system-out>
+  </testcase>
+  <testcase name="tenantCrudTest" classname="m.api.tenant.TenantTest" time="7.294">
+    <system-out><![CDATA[12:39:57.112 -- INFO  [TestNG-test-Surefire test-1] --Response:
+---Status: HTTP/1.1 200 OK
+---X-Request-Id: null
+---Body:
+{
+    "name": "Test Tenant",
+    "editionId": null,
+    "editionEndDateUtc": null,
+    "editionName": null,
+    "hasDefaultConnectionString": false,
+    "activationState": 0,
+    "activationEndDate": null,
+    "concurrencyStamp": "4c93922773664395941c58de27945400",
+    "id": "3a15122b-fdc5-5717-0439-a866d5f7827f",
+    "extraProperties": {
+        "LogoUrl": null
+    }
+}
+12:39:57.134 -- WARN  [TestNG-test-Surefire test-1] Could not parse request body: null
+12:39:57.135 -- INFO  [TestNG-test-Surefire test-1] --Request: DELETE : https://api-dev.3motionai.com/api/saas/tenants/3a15122b-fdc5-5717-0439-a866d5f7827f
+---Headers:
+Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjdkMjg0N2ItNTc2Yy00MmNmLTkyNzUtZDAwMmYzZGVkNjRlIiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6ImE4MzVkNTk4LTg3YmYtNGM5Yi05ZDVlLWIzMzA0NGU3NTVkZiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiMTYtYmNmOC0wMmUxLWVhMzM0YWI5MGI2MCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGIxZS1iNTM0LTVhYzAtYWQ2NzgwZTVkYzUxIn0.FkLcANTkQ3SRks9C_jMFYTcW2XQsc2FQoDpsn9DqV--9clxbcXleFCfVERTexZAoG3vADLlkoTzofTas8yqbp63OS6YCfnV5VHfMM87TEgJEdwBMxHk1FjJRVXeTK-UpHwXFa_fhg_3I74kJ4YcgBniuwTlZCkSV48p-SPGsLtIHuQkcUR9At4i6EfmIrjn1pw89HfWRI78yngIY7NlALao1iXF97-oZX9c1Di3ZfhvLwJUaFog5--W2wpvfz6lr9pnrT_VrbwfKQ3tPulx40hLj1avCCr27pd51heKLJT5c4SpCOU8rNDhidGwQS1_0Rs8MsC0Ydleyqp-GAOpTqQ
+Accept=*/*
+Content-Type=application/json
+---Body:
+null
+12:39:57.581 -- INFO  [TestNG-test-Surefire test-1] --Response:
+---Status: HTTP/1.1 204 No Content
+---X-Request-Id: null
+---Body:
+
+]]></system-out>
+  </testcase>
+</testsuite>

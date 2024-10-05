@@ -1,0 +1,69 @@
+[Sep 17 12:39:49.975]             BaseTest INFO  - Integration Test: [m.api.user.UserTest_userCrudTest] STARTED
+[Sep 17 12:39:49.980]             BaseTest INFO  - -------------------------------------------
+[Sep 17 12:39:50.431]       UserController INFO  - Add user
+[Sep 17 12:39:51.844]    AbstractApiClient INFO  - --Request: POST : https://api-dev.3motionai.com/api/identity/users/custom
+---Headers:
+Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjMwZjZhZjctMjUwOC00NDI1LTkzMDAtMzZjOTlhNmVjYjE2Iiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6IjYxZDNhMTMzLWJkM2EtNGFkNS05MWY0LTg5Y2RiYzk0YmQ2NiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiZDYtYmM0Ny04NDAxLTFiNGE1ZDhlNjgxNCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGJkYy05MzUxLThiZWQtODVkYWJiNDFhNmQ0In0.j7JlWSDx2sJ9SKtAGF082uTK7iLNJyQIyDFDZAVoEylk2xM34yZ7R36MKO6HmAOYJ-6fWO8r1k6_XmhJwOPAhe9cmz11bUbBgQGLoun6TU4BjEdYwIaZbVyJc0QrNYRSM_0fQoffREUIePtfwDlKVvUBjyA5F0dmsbMM2HrDDsrYzOiCahxQRtqWtyr5KW8jHgkghiXUSHFCdHAS5U91_DUou28EqnvmUZHxXQPyOAKEf4ZWMZX0IXDyrhzBp_AoKODG2WW1bse_dFHdiIla1W33kTDlIyx3azmI859zcGk3xm1HbyAe0LHmzIZ8lQLSDkySqXqmnKlBsPgQa_0DOA
+Accept=*/*
+Content-Type=application/json
+---Body:
+{
+  "email" : "automation.admin@3motionai.com",
+  "name" : "Automation",
+  "surname" : "Admin",
+  "role" : "3M Tech Admin",
+  "username" : null,
+  "roleNames" : [ "3M Tech Admin" ],
+  "organizationUnitIds" : [ ]
+}
+[Sep 17 12:39:55.864]    AbstractApiClient INFO  - --Response:
+---Status: HTTP/1.1 200 OK
+---X-Request-Id: null
+---Body:
+{
+    "tenantId": null,
+    "userName": "automation.admin@3motionai.com",
+    "email": "automation.admin@3motionai.com",
+    "name": "Automation",
+    "surname": "Admin",
+    "emailConfirmed": false,
+    "phoneNumber": null,
+    "phoneNumberConfirmed": false,
+    "supportTwoFactor": false,
+    "twoFactorEnabled": false,
+    "isActive": true,
+    "lockoutEnabled": true,
+    "isLockedOut": false,
+    "lockoutEnd": null,
+    "shouldChangePasswordOnNextLogin": false,
+    "concurrencyStamp": "5dcb95b936824ad099e9f9fe81a0757c",
+    "roleNames": null,
+    "accessFailedCount": 0,
+    "lastPasswordChangeTime": null,
+    "isExternal": false,
+    "isDeleted": false,
+    "deleterId": null,
+    "deletionTime": null,
+    "lastModificationTime": null,
+    "lastModifierId": null,
+    "creationTime": "2024-09-17T12:39:57.1447438+00:00",
+    "creatorId": "3a100b40-3a04-ced0-4481-e9b74245d9bf",
+    "id": "3a15122b-fdd0-288f-f781-70917a2c9463",
+    "extraProperties": {
+        
+    }
+}
+[Sep 17 12:39:55.892]       UserController INFO  - Delete user
+[Sep 17 12:39:55.907]    AbstractApiClient WARN  - Could not parse request body: null
+[Sep 17 12:39:55.908]    AbstractApiClient INFO  - --Request: DELETE : https://api-dev.3motionai.com/api/identity/users/3a15122b-fdd0-288f-f781-70917a2c9463
+---Headers:
+Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjMwZjZhZjctMjUwOC00NDI1LTkzMDAtMzZjOTlhNmVjYjE2Iiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6IjYxZDNhMTMzLWJkM2EtNGFkNS05MWY0LTg5Y2RiYzk0YmQ2NiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiZDYtYmM0Ny04NDAxLTFiNGE1ZDhlNjgxNCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGJkYy05MzUxLThiZWQtODVkYWJiNDFhNmQ0In0.j7JlWSDx2sJ9SKtAGF082uTK7iLNJyQIyDFDZAVoEylk2xM34yZ7R36MKO6HmAOYJ-6fWO8r1k6_XmhJwOPAhe9cmz11bUbBgQGLoun6TU4BjEdYwIaZbVyJc0QrNYRSM_0fQoffREUIePtfwDlKVvUBjyA5F0dmsbMM2HrDDsrYzOiCahxQRtqWtyr5KW8jHgkghiXUSHFCdHAS5U91_DUou28EqnvmUZHxXQPyOAKEf4ZWMZX0IXDyrhzBp_AoKODG2WW1bse_dFHdiIla1W33kTDlIyx3azmI859zcGk3xm1HbyAe0LHmzIZ8lQLSDkySqXqmnKlBsPgQa_0DOA
+Accept=*/*
+Content-Type=application/json
+---Body:
+null
+[Sep 17 12:39:56.889]    AbstractApiClient INFO  - --Response:
+---Status: HTTP/1.1 204 No Content
+---X-Request-Id: null
+---Body:
+

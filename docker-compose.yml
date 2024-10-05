@@ -1,0 +1,41 @@
+version: '3'
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - D:/Mox/job/new code/3m:/code
+
+  jenkins-agent-1:
+    image: jenkins/inbound-agent
+    container_name: jenkins-agent-1
+    depends_on:
+      - jenkins
+    environment:
+      - JENKINS_URL=http://jenkins:8080
+      - JENKINS_AGENT_NAME=agent-1
+      - JENKINS_AGENT_SECRET=3982f79e82d9ab5dff1d5a63fa66cd7b57e0f3d8af07ed95abf128d2967e616f
+    volumes:
+      - D:/Mox/job/new code/3m:/code
+    network_mode: service:jenkins
+    entrypoint: ["java", "-jar", "/usr/share/jenkins/agent.jar", "-url", "http://jenkins:8080", "-name", "agent-1", "-secret", "3982f79e82d9ab5dff1d5a63fa66cd7b57e0f3d8af07ed95abf128d2967e616f"]
+
+  jenkins-agent-2:
+    image: jenkins/inbound-agent
+    container_name: jenkins-agent-2
+    depends_on:
+      - jenkins
+    environment:
+      - JENKINS_URL=http://jenkins:8080
+      - JENKINS_AGENT_NAME=agent-2
+      - JENKINS_AGENT_SECRET=023dcc087e8837a2edbe0bfedb460babede08711bb796ddc7acffbc5e87e04b8
+    volumes:
+      - D:/Mox/job/new code/3m:/code
+    network_mode: service:jenkins
+    entrypoint: ["java", "-jar", "/usr/share/jenkins/agent.jar", "-url", "http://jenkins:8080", "-name", "agent-2", "-secret", "023dcc087e8837a2edbe0bfedb460babede08711bb796ddc7acffbc5e87e04b8"]
+
+volumes:
+  jenkins_home:

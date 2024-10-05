@@ -1,0 +1,4 @@
+[Sep 17 12:39:35.821]             BaseTest INFO  - Authenticate Main Admin
+[Sep 17 12:39:35.821]             BaseTest INFO  - Authenticate Main Admin
+[Sep 17 12:39:49.612]             BaseTest INFO  - User is Authenticated Successfully
+[Sep 17 12:39:49.612]             BaseTest INFO  - User is Authenticated Successfully

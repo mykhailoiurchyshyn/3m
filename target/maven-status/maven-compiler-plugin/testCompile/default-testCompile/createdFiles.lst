@@ -1,0 +1,10 @@
+m/api/tenant/TenantTest.class
+m/TestTest.class
+m/api/BaseApiTest.class
+m/data/UserTestDataFactory.class
+m/ui/BaseUiTest.class
+m/BaseTest.class
+m/ui/login/LoginTest.class
+m/api/BaseMainAdminApiTest.class
+m/api/user/UserTest.class
+m/data/TenantTestDataFactory.class

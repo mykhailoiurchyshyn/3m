@@ -1,0 +1,10 @@
+/code/src/test/java/m/BaseTest.java
+/code/src/test/java/m/ui/login/LoginTest.java
+/code/src/test/java/m/api/tenant/TenantTest.java
+/code/src/test/java/m/api/user/UserTest.java
+/code/src/test/java/m/data/TenantTestDataFactory.java
+/code/src/test/java/m/api/BaseMainAdminApiTest.java
+/code/src/test/java/m/TestTest.java
+/code/src/test/java/m/ui/BaseUiTest.java
+/code/src/test/java/m/data/UserTestDataFactory.java
+/code/src/test/java/m/api/BaseApiTest.java

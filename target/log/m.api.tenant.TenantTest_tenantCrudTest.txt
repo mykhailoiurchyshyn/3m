@@ -1,0 +1,45 @@
+[Sep 17 12:39:49.975]             BaseTest INFO  - Integration Test: [m.api.tenant.TenantTest_tenantCrudTest] STARTED
+[Sep 17 12:39:49.986]             BaseTest INFO  - -------------------------------------------
+[Sep 17 12:39:51.844]    AbstractApiClient INFO  - --Request: POST : https://api-dev.3motionai.com/api/saas/tenants
+---Headers:
+Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjdkMjg0N2ItNTc2Yy00MmNmLTkyNzUtZDAwMmYzZGVkNjRlIiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6ImE4MzVkNTk4LTg3YmYtNGM5Yi05ZDVlLWIzMzA0NGU3NTVkZiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiMTYtYmNmOC0wMmUxLWVhMzM0YWI5MGI2MCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGIxZS1iNTM0LTVhYzAtYWQ2NzgwZTVkYzUxIn0.FkLcANTkQ3SRks9C_jMFYTcW2XQsc2FQoDpsn9DqV--9clxbcXleFCfVERTexZAoG3vADLlkoTzofTas8yqbp63OS6YCfnV5VHfMM87TEgJEdwBMxHk1FjJRVXeTK-UpHwXFa_fhg_3I74kJ4YcgBniuwTlZCkSV48p-SPGsLtIHuQkcUR9At4i6EfmIrjn1pw89HfWRI78yngIY7NlALao1iXF97-oZX9c1Di3ZfhvLwJUaFog5--W2wpvfz6lr9pnrT_VrbwfKQ3tPulx40hLj1avCCr27pd51heKLJT5c4SpCOU8rNDhidGwQS1_0Rs8MsC0Ydleyqp-GAOpTqQ
+Accept=*/*
+Content-Type=application/json
+---Body:
+{
+  "name" : "Test Tenant",
+  "adminEmailAddress" : "test.automation.admin@3motionai.com",
+  "adminPassword" : "QWEasd12!!",
+  "id" : null
+}
+[Sep 17 12:39:57.112]    AbstractApiClient INFO  - --Response:
+---Status: HTTP/1.1 200 OK
+---X-Request-Id: null
+---Body:
+{
+    "name": "Test Tenant",
+    "editionId": null,
+    "editionEndDateUtc": null,
+    "editionName": null,
+    "hasDefaultConnectionString": false,
+    "activationState": 0,
+    "activationEndDate": null,
+    "concurrencyStamp": "4c93922773664395941c58de27945400",
+    "id": "3a15122b-fdc5-5717-0439-a866d5f7827f",
+    "extraProperties": {
+        "LogoUrl": null
+    }
+}
+[Sep 17 12:39:57.134]    AbstractApiClient WARN  - Could not parse request body: null
+[Sep 17 12:39:57.135]    AbstractApiClient INFO  - --Request: DELETE : https://api-dev.3motionai.com/api/saas/tenants/3a15122b-fdc5-5717-0439-a866d5f7827f
+---Headers:
+Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4RDVERjhFNjc1MjMxQTk3NENGODZENUYzQ0Y2NjQyOUFFODc1MzAiLCJ4NXQiOiJXTlhmam1kU01hbDB6NGJWODg5bVFwcm9kVEEiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL2F1dGgtZGV2LjNtb3Rpb25haS5jb20vIiwiZXhwIjoxNzI2NTgwMzg4LCJpYXQiOjE3MjY1NzY3ODgsImF1ZCI6Il8zTSIsInNjb3BlIjoib2ZmbGluZV9hY2Nlc3MgXzNNIiwianRpIjoiYjdkMjg0N2ItNTc2Yy00MmNmLTkyNzUtZDAwMmYzZGVkNjRlIiwic3ViIjoiM2ExMDBiNDAtM2EwNC1jZWQwLTQ0ODEtZTliNzQyNDVkOWJmIiwic2Vzc2lvbl9pZCI6ImE4MzVkNTk4LTg3YmYtNGM5Yi05ZDVlLWIzMzA0NGU3NTVkZiIsInVuaXF1ZV9uYW1lIjoiYWRtaW4iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJhZG1pbiIsInJvbGUiOiIzTSBUZWNoIEFkbWluIiwiZW1haWwiOiJhZG1pbkBhYnAuaW8iLCJlbWFpbF92ZXJpZmllZCI6IkZhbHNlIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiRmFsc2UiLCJvaV9wcnN0IjoiXzNNX1Bvc3RtYW5fSW50ZXJuYWwiLCJvaV9hdV9pZCI6IjNhMTUxMjJiLWRiMTYtYmNmOC0wMmUxLWVhMzM0YWI5MGI2MCIsImNsaWVudF9pZCI6Il8zTV9Qb3N0bWFuX0ludGVybmFsIiwib2lfdGtuX2lkIjoiM2ExNTEyMmItZGIxZS1iNTM0LTVhYzAtYWQ2NzgwZTVkYzUxIn0.FkLcANTkQ3SRks9C_jMFYTcW2XQsc2FQoDpsn9DqV--9clxbcXleFCfVERTexZAoG3vADLlkoTzofTas8yqbp63OS6YCfnV5VHfMM87TEgJEdwBMxHk1FjJRVXeTK-UpHwXFa_fhg_3I74kJ4YcgBniuwTlZCkSV48p-SPGsLtIHuQkcUR9At4i6EfmIrjn1pw89HfWRI78yngIY7NlALao1iXF97-oZX9c1Di3ZfhvLwJUaFog5--W2wpvfz6lr9pnrT_VrbwfKQ3tPulx40hLj1avCCr27pd51heKLJT5c4SpCOU8rNDhidGwQS1_0Rs8MsC0Ydleyqp-GAOpTqQ
+Accept=*/*
+Content-Type=application/json
+---Body:
+null
+[Sep 17 12:39:57.581]    AbstractApiClient INFO  - --Response:
+---Status: HTTP/1.1 204 No Content
+---X-Request-Id: null
+---Body:
+
